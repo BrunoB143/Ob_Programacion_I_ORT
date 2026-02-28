@@ -1,0 +1,59 @@
+/*Bruno Barcelona 348862 y Rodrigo Carrion 334254*/
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#imagen {
+    display: block;
+    margin: 20px auto;
+    max-width: 30%;
+    height: auto;
+    border-radius: 12px;
+}
+
+#idEstadisticas , #idDatos{
+    background-color: #d5f4d4;
+    border-radius: 10px;
+    padding: 20px;
+}
+#btnPatrocinador{
+    width: 15%;
+}
+
+article {
+    background-color: #02ff7f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+
+}
+.radioBtn{
+    display: inline-block;
+}
+
+.orden{
+    width: 10%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+footer{
+    background-color: #f0f4d4;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+

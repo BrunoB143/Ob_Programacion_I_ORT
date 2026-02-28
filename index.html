@@ -10,12 +10,10 @@
     <title>Sitio de carreras</title>
 </head>
 <body>
-    <header>
-        <h1>Sitio para Carreras</h1>
-        <img id="imagen"  src="img/corredores.jpeg" alt="corredoresde uruguay">
-        <input type="button" value="Datos" id="btnDatos">
-        <input type="button" value="Estadistica" id="btnEstadistica">
-    </header>
+    <h1>Sitio para Carreras</h1>
+    <img id="imagen"  src="img/corredores.jpeg" alt="corredoresde uruguay">
+    <input class="orden" type="button" value="Datos" id="btnDatos">
+    <input class="orden" type="button" value="Estadistica" id="btnEstadistica">
     <section id="idDatos" style="display:block">
         <h3>Datos</h3>
         <article>
@@ -50,6 +48,8 @@
             <label for="idCupo">Cupo:</label>
             <input class="orden" type="number" name="cupos" id="idCupo" value="30" min="1" max="1000" required>
             <input class="orden" type="button" value="Agregar Carrera" id="btnAgregarCarrera">
+            <!--<h4>LISTA DE CARRERAS</h4>
+            <ul id="idListaCarreras"></ul>-->
             </form>
         </article>
 
@@ -70,8 +70,8 @@
                 <option value="estatal">Estatal</option>
                 <option value="general">General</option>
             </select>
-            <label for="idCarrerasPat">Carreras:</label>
-            <select class="orden" name="carrerasPat" id="idCarrerasAPatrocinar"  size="5" multiple required>
+            <label for="idDepartamentoCarreras">Carreras:</label>
+            <select class="orden" name="comboDepartamento" id="idDepartamentoCarreras"  size="5" multiple required>
                 
             </select>
             <input class="orden" type="button" value="Agregar/Actualizar Patrocinador" id="btnPatrocinador">
@@ -81,7 +81,7 @@
             <h4>Corredores</h4>
             <form action="#" id="idFormCorredores">
             <label for="idNombreCorredor">Nombre:</label>
-            <input class="orden" type="text" name="corredor" id="idNombreCorredor" required>
+            <input class="orden" type="text" name="corredor" id="idNombreCorredor">
             <label for="idEdadCorredor">Edad:</label>
             <input class="orden" type="number" name="edad" id="idEdadCorredor" min="18" max="100" required>
             <label for="idCedula">Cédula:</label>
@@ -104,11 +104,11 @@
             <form action="#" id="idFormInscripciones">
             <label for="idCorredoresInscripcion">Corredores</label>
             <select class="orden" name="corredores" id="idCorredoresInscripcion" required>
-                <option value="" disabled selected>Seleccione un corredor</option>
+
             </select>
             <label for="idCarrerasInscripcion">Carreras</label>
             <select class="orden" name="carrerasinsc" id="idCarrerasInscripcion" required>
-                <option value="" disabled selected>Seleccione una carrera</option>
+
             </select>
             <input class="orden" type="button" value="Inscribir" id="btnInscribir">
             </form>
@@ -120,7 +120,7 @@
                     <h4>Datos generales</h4>
                     <form action="#">
                     <p>Promedios de inscriptos por carrera: <span id="idPromedioPorCarrera">sin datos</span></p>
-                    <p>Carrera/s con más inscriptos:</p>
+                    <p>Carrera/s con mas inscriptos:</p>
                     <ul id="idListaMasInscriptos">
                         <li>sin datos</li>
                     </ul>
