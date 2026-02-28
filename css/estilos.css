@@ -1,30 +1,4 @@
 /*Bruno Barcelona 348862 y Rodrigo Carrion 334254*/
-
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-top: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#imagen {
-    display: block;
-    margin: 20px auto;
-    max-width: 30%;
-    height: auto;
-    border-radius: 12px;
-}
-
-#idEstadisticas , #idDatos{
-    background-color: #d5f4d4;
-    border-radius: 10px;
-    padding: 20px;
-}
-#btnPatrocinador{
-    width: 15%;
-}
-
 article {
     background-color: #02ff7f;
     border-radius: 10px;
@@ -33,14 +7,99 @@ article {
     display: flex;
     text-align: left;
     flex-direction: column;
-
+    line-height: 0;
 }
-.radioBtn{
+
+h1 {
+    text-align: center;
+    font-size: 1em;
+    color: #070707;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+}
+
+h3 {
+    line-height: 1;
+}
+
+#imagen {
+    display: block;
+    margin: 20px auto;
+    max-width: 30%;
+    height: auto;
+}
+
+#btnDatos {
+    margin-bottom: 12px;
+}
+
+#btnPatrocinador {
+    width: 15%;
+}
+
+#btnAgregarCorredor {
+    width: 8%;
+}
+
+.btnActivo {
+    background-color: #4CAF50;
+}
+
+.btnInactivo {
+    background-color: #ccc;
+}
+
+.btnActivo:hover, .btnInactivo:hover {
+    opacity: 0.8;
+}
+
+#idEstadisticas, #idDatos {
+    background-color: #d5f4d4;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#idFormInscripciones {
+    width: 50%;
+}
+
+.orden {
+    width: 10%;
+}
+
+#idDepartamento {
+    width: 8%;
+}
+
+#idRubro {
+    width: 8%;
+}
+
+#idInscriptosCarrera {
+    width: 12%;
+}
+
+#idInscLin {
+    line-height: 0.5;
+}
+
+#idcaptInsc {
+    line-height: 1;
+}
+
+.radioBtn {
     display: inline-block;
 }
 
-.orden{
-    width: 10%;
+#idCarrerasAPatrocinar {
+    width: 100px;
+    height: 100px;
 }
 
 table, th, td {
@@ -49,11 +108,14 @@ table, th, td {
     padding: 5px;
 }
 
+#idTablaInscriptos {
+    width: 350px;
+    height: 50px;
+}
 
-footer{
+footer {
     background-color: #f0f4d4;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
 }
-
